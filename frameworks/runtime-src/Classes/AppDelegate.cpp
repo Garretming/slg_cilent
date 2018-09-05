@@ -42,6 +42,8 @@ using namespace cocos2d::experimental;
 using namespace CocosDenshion;
 #endif
 
+#include "reader/lua-bindings/creator_reader_bindings.hpp"
+
 USING_NS_CC;
 using namespace std;
 
@@ -91,7 +93,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     ScriptEngineManager::getInstance()->setScriptEngine(engine);
     lua_State* L = engine->getLuaStack()->getLuaState();
     lua_module_register(L);
-
+    
+    register_creator_reader_module(L);//@Clark 绑定creator
+    
     register_all_packages();
 
     LuaStack* stack = engine->getLuaStack();

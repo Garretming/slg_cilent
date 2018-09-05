@@ -1,0 +1,3 @@
+[submodule "doc/dragonbones"]
+	path = doc/dragonbones
+	url = https://github.com/Relvin/dragonbones.git
