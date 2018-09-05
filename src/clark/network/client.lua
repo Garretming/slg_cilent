@@ -1,5 +1,5 @@
 local Socket = require "socket"
-local Packer = require "network.packer"
+local Packer = require "clark.network.packer"
 
 local M = {}
 

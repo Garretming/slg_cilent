@@ -55,4 +55,7 @@ gradlew.bat
 unused.txt
 
 */.vscode/launch.json
+log/
+tmp/
+*/.svn/
 
